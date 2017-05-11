@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+<style>  
+button {
+    font-family: 'Inknut Antiqua', serif; 
+    background-color: white;
+    border: none;
+    color:#1a1aff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 45px;
+
+}
+.results-page {
+ text-align:center; 
+}
+</style>
+</head>
+<body> 
+
+<% memes = ["https://i.ytimg.com/vi/Yj7ja6BANLM/maxresdefault.jpg", "http://i2.kym-cdn.com/photos/images/newsfeed/001/154/407/d74.jpg","https://img.memesuper.com/71feff150a4744156fb22dfb1640503e_-how-many-memes-can-shrek-memes-shrek_500-523.jpeg","http://theantimedia.org/wp-content/uploads/2016/04/13076914_259774271036943_1955029558163547212_n.jpg","https://i.ytimg.com/vi/lZk1paGOxa0/maxresdefault.jpg", "https://pics.me.me/if-china-is-8-hours-ahead-why-didnt-they-warn-19054387.png", "http://s2.quickmeme.com/img/9d/9db4006e0104f86638a4caad532c7640b9a08535720de4a8467878693c7db1e9.jpg", "http://shard2.reverbpress.com/wp-content/uploads/2016/01/pennywise.jpg"] %>
+
+  <div class="results-page">
+    <img src="<%= memes.sample %>" height="500px"><br>
+    <a href="/"><button>Meme Again</button></a>
+  </div>
+
+</body>
+</html>
